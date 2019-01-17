@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <style>
+        *{
+            border-radius: 0;
+        }
+        body{
+            background-color: #E7F7F9;
+            font-family: 'Poppins', sans-serif;
+        }
+        .card{
+            margin-bottom: 15px;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <card v-on:delete-article="deleteArticle($event)" :title="article.title" :content="article.content" v-for="article in articles"></card>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
