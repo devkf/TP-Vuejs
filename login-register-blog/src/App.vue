@@ -21,4 +21,12 @@ export default {
 
 <style>
 
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f3ef;
+}
+*{
+  border-radius: 0;
+}
+
 </style>
